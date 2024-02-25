@@ -137,5 +137,21 @@
     <button class="more-button">استكشاف المزيد</button> <!-- Added button -->
   </div>
 </section>
+
+<section class="reviews-section">
+  <div class="div1">
+    <div class="image-container">
+      <img src="images/reviews circle.jpg" alt="Customer Reviews">
+      <div class="overlay">
+        <button class="reviews-button">قراءة آراء جميع الزبائن</button>
+      </div>
+    </div>
+  </div>
+  <div class="div2">
+  <h3>المراجعات</h3>
+    <h1>زبائننا الرائعين يحبّون مطعمنا</h1>
+    <p>تبدأ قصتنا بشغف للمأكولات الإيطالية الأصيلة، حيث تمتزج بسلاسة مع دفء ونكهات التقاليد العراقية. يتموضع مطعم سالا في قلب بغداد، وهو أكثر من مجرد مطعم؛ إنه احتفال بتنوع وثراء تاريخ الثقافات الطهي.</p>
+  </div>
+</section>
 </body>
 </html>
