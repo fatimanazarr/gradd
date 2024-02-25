@@ -9,7 +9,7 @@ if ($database) {
     $menu_statement = $database->query($menu_sql); 
     $menu_data = $menu_statement->fetchAll(PDO::FETCH_ASSOC); 
 
-    $images_sql = "SELECT image FROM images"; // Select only the 'image' column
+    $images_sql = "SELECT Dishimage FROM images"; // Select only the 'image' column
     $images_statement = $database->query($images_sql); 
     $images_data = $images_statement->fetchAll(PDO::FETCH_ASSOC); 
 

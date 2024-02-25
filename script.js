@@ -11,7 +11,7 @@ fetch("fetch_data.php")
 
       // Create and set the image element
       const img = document.createElement("img");
-      img.src = data.images[index].DishImage;
+      img.src = data.images[index].Dishimage;
       img.alt = `img ${index + 1}`;
       img.style.width = "202px";
       img.style.height = "200px";

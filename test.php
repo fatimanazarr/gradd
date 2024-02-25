@@ -61,6 +61,11 @@
     <h1 id="title3"></h1>
     <p id="text3"></p>
   </div>
+  <div class="div" id="div4">
+    <img src="" alt="Image 3" id="image3">
+    <h1 id="title3"></h1>
+    <p id="text3"></p>
+  </div>
 </section>
 <script src="script.js"></script>
 </body>

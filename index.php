@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="resp.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -148,10 +149,45 @@
     </div>
   </div>
   <div class="div2">
-  <h3>المراجعات</h3>
+    <h3>المراجعات</h3>
     <h1>زبائننا الرائعين يحبّون مطعمنا</h1>
     <p>تبدأ قصتنا بشغف للمأكولات الإيطالية الأصيلة، حيث تمتزج بسلاسة مع دفء ونكهات التقاليد العراقية. يتموضع مطعم سالا في قلب بغداد، وهو أكثر من مجرد مطعم؛ إنه احتفال بتنوع وثراء تاريخ الثقافات الطهي.</p>
+    <h4>Sarah James</h4>
+    <div class="icon-container">
+      <div class="icon-circle"><i class="fas fa-chevron-right"></i></div>
+      <div class="icon-circle"><i class="fas fa-chevron-left"></i></div>
+    </div>
   </div>
+</section>
+<section class="footer-section">
+  <div class="left-div">
+    <div class="footer-item">
+      <h3>روابط مفيدة</h3>
+      <h5>من نحن</h5>
+      <h5>تواصل معنا</h5>
+    </div>
+    <div class="footer-item">
+      <h3>قائمة الطعام</h3>
+      <h5>الاطباق المميزة</h5>
+      <h5>القائمة</h5>
+    </div>
+    <div class="footer-item">
+      <h3>تواصل معنا</h3>
+      <h5>mail.ru@yahoo.com</h5>
+      <h5>07485**293</h5>
+    </div>
+  </div>
+  <div class="right-div3">
+    <h1>سالا</h1>
+    <p>تبدأ قصتنا بشغف للمأكولات الإيطالية الأصيلة.</p>
+    <div class="social-icons">
+      <img src="images/whatssapp.png" alt="WhatsApp">
+      <img src="images/facebook.png" alt="Facebook">
+      <img src="images/instagram.png" alt="Instagram">
+    </div>
+    
+  </div>
+  <p class="footer-caption">2024 Fatima Nazar & Athraa Qais. All Rights Reserved.</p>
 </section>
 </body>
 </html>
