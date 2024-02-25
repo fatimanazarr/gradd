@@ -87,54 +87,54 @@
   </div>
   <div class="items-div">
     <div class="item">
-      <img src="img\Appetizers\Crab_salad_.png" alt="Image 1">
+      <img src="img/Appetizers/Crab_salad_.png" alt="Image 1">
       <h1>عنوان العنصر 1</h1>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
       <h3>تفاصيل العنصر 1</h3>
     </div>
     <div class="item">
-      <img src="img\Appetizers\greekSalad.png" alt="Image 2">
+      <img src="img/Appetizers/greekSalad.png" alt="Image 2">
       <h1>عنوان العنصر 2</h1>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
       <h3>تفاصيل العنصر 2</h3>
     </div>
     <div class="item">
-      <img src="img\Appetizers\Bufflo_wings_.png" alt="Image 3">
+      <img src="img/Appetizers/Bufflo_wings_.png" alt="Image 3">
       <h1>عنوان العنصر 3</h1>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
       <h3>تفاصيل العنصر 3</h3>
     </div>
     <div class="item">
-      <img src="img\Appetizers\Bufflo_wings_.png" alt="Image 3">
+      <img src="img/Appetizers/Bufflo_wings_.png" alt="Image 3">
       <h1>عنوان العنصر 3</h1>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
       <h3>تفاصيل العنصر 3</h3>
     </div>
     <div class="item">
-      <img src="img\Appetizers\Crab_salad_.png" alt="Image 1">
+      <img src="img/Appetizers/Crab_salad_.png" alt="Image 1">
       <h1>عنوان العنصر 1</h1>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
       <h3>تفاصيل العنصر 1</h3>
     </div>
     <div class="item">
-      <img src="img\Appetizers\greekSalad.png" alt="Image 2">
+      <img src="img/Appetizers/greekSalad.png" alt="Image 2">
       <h1>عنوان العنصر 2</h1>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
       <h3>تفاصيل العنصر 2</h3>
     </div>
     <div class="item">
-      <img src="img\Appetizers\Bufflo_wings_.png" alt="Image 3">
+      <img src="img/Appetizers/Bufflo_wings_.png" alt="Image 3">
       <h1>عنوان العنصر 3</h1>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
       <h3>تفاصيل العنصر 3</h3>
     </div>
     <div class="item">
-      <img src="img\Appetizers\Bufflo_wings_.png" alt="Image 3">
+      <img src="img/Appetizers/Bufflo_wings_.png" alt="Image 3">
       <h1>عنوان العنصر 3</h1>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
       <h3>تفاصيل العنصر 3</h3>
     </div>
-    
+    <button class="more-button">استكشاف المزيد</button> <!-- Added button -->
   </div>
 </section>
 </body>
