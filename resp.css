@@ -1,0 +1,72 @@
+@media only screen and (max-width: 375px) {
+    .hero-section {
+      padding: 10px;
+      margin-top: -50px;
+    }
+  
+    .logo h1 {
+      font-size: 10px;
+    }
+  
+    .menu ul li {
+      margin-right: 40px;
+      font-size: 5px;
+    }
+  
+    .search input {
+      width: 160px;
+      height: 28px;
+    }
+  
+    .image img {
+      width: 400px;
+      margin-right: -18px;
+    }
+  
+    .content-section {
+      flex-direction: column;
+      padding: 0;
+      margin-top: -5px;
+    }
+  
+    .left-div {
+      width: 300px;
+      margin-top: 20px;
+      margin-right: 0;
+    }
+  
+    .left-div img {
+      width: 320px;
+    }
+  
+    .right-div {
+      margin-left: 0;
+    }
+  
+    .right-div h3 {
+      font-size: 14px;
+    }
+  
+    .right-div h2 {
+      font-size: 40px;
+      margin-top: -20px;
+    }
+  
+    .right-div h2:nth-of-type(2) {
+      font-size: 80px;
+      margin-top: -60px;
+    }
+  
+    .right-div p {
+      font-size: 14px;
+      margin-top: -40px;
+      width: 300px;
+    }
+  
+    .explore-button {
+      width: 140px;
+      height: 40px;
+      font-size: 14px;
+      border-radius: 20px;
+    }
+  }

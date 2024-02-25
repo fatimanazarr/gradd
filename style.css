@@ -1,0 +1,347 @@
+@font-face {
+    font-family:'Mirza';
+    src: url(fonts/Mirza/Mirza-Medium.ttf);
+
+    font-family: 'Avenir';
+    src: url(fonts/avenir-arabic/AvenirArabic-Light.otf);
+}
+
+.hero-section {
+    padding: 1%;
+    margin-top: -3%; /* Adjust this value to move the section up */
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative; /* Add this line */
+  }
+  
+  .logo h1 {
+    font-size: 80px;
+    font-family: 'Mirza', sans-serif;
+    color: #964325;
+  }
+  
+  .menu ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  .menu ul li {
+    margin-right: 70px;
+    font-size: 25px;
+    font-family: 'Avenir';
+    color: black;
+  }
+  
+  .search input {
+    background-color: transparent;
+    border: 1px solid black;
+    font-family: 'Avenir';
+    border-radius: 5px;
+    width: 240px;
+    height: 33px;
+  }
+  /* تصميم الدائرة البيجي اللي بالسكشن الاول*/
+  .image {
+
+    position: absolute;
+    top: -30px; /* Adjust this value to move the image up */
+    z-index: -1; /* Add this line to move the image to the back */
+  }
+  
+  .image img{
+    width: 700px;
+    height: auto;
+    margin-right: -28px;
+  }
+
+  .content-section {
+    display: flex;
+    margin-top: -10px;
+    padding: 0 90px 0 0;
+  }
+    /* تصميم الدائرة مال الاطباق اللي بالسكشن الاول*/
+
+  .left-div {
+    width: 600px;
+    height: auto;
+    margin-top: 70px;
+    margin-right: 250px;
+  }
+  .left-div img {
+    width: 600px; /* Adjust this value to set the desired width */
+    height: auto; /* Adjust this value to maintain the aspect ratio */
+  }
+    /* تصميم النصوص مال المطعم اللي بالسكشن الاول*/
+
+  .right-div {
+    margin-left: 10px;
+    direction: rtl;
+  }
+  
+  .right-div h3 {
+    font-size: 18px;
+    font-family: 'Avenir';
+    color: #964325;
+  }
+  
+  .right-div h2 {
+    font-size: 60px;
+    margin-top: -30px;
+    font-family: 'Avenir';
+    color: black;
+  }
+  
+  .right-div h2:nth-of-type(2) {
+    font-size: 110px;
+    margin-top: -80px; /* Adjust this value to move the heading up */
+    font-family: 'Mirza';
+    color: black;
+  }
+  .right-div p {
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: -60px;
+    width: 420px;
+    font-family: 'Avenir';
+    color: black;
+  }
+    /* تصميم البتن مال المنيو اللي بالسكشن الاول*/
+
+  .explore-button {
+    width: 196px;
+    height: 56px;
+    margin-top: 30px;
+    font-family: Avenir;
+    font-size: 15px;
+    font-weight: 400px;
+    background-color: #964325;
+    color: #F1EEE7;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Avenir', sans-serif;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+  
+  
+  .explore-button:hover {
+    background-color: #411d10;
+
+  }
+  
+  .right-div img {
+    display: block;
+    margin-top: 100px; /* Adjust this value to set the desired spacing */
+    width: 75%; /* Adjust this value to set the desired width */
+    height: auto; /* Adjust this value to maintain the aspect ratio */
+  }
+  .explore-button:hover::before {
+    left: 100%;
+  }
+
+/* TESTTTT*/
+
+.three-divs-section {
+  display: flex;
+  margin-top: 100px;
+  justify-content: space-around;
+}
+
+.divx {
+  position: relative;
+  width: 300px;
+  height: 350px;
+  border: 2px solid #DCD4CF;
+  border-radius: 40px;
+  background-color: #FFFFFF;
+  text-align: center;
+  overflow: hidden;
+  transition: background-color 0.3s ease; /* Added transition */
+}
+.divx img {
+  display: block;
+  margin: 0 auto;
+  height: 150px;
+}
+
+.divx h1 {
+  color: #000000;
+  font-weight: 900;
+  font-size: 20px;
+  font-family: Avenir;
+  transition: color 0.3s ease; /* Added transition */
+}
+
+.divx p {
+  color: #333333;
+  font-size: 15px;
+  font-family: Avenir;
+}
+
+.divx:hover {
+  background-color: #8d5e3a;
+  border: none;
+}
+
+.divx:hover h1 {
+  color: #FFFFFF;
+}
+
+.divx:hover p {
+  color: #FFFFFF;
+}
+
+/*****************Our Story Section ********************/
+.two-divs-section {
+  display: flex;
+  margin-top: 150px;
+}
+
+.image-div2 {
+  flex: 1;
+  text-align: right;
+}
+
+.image-div2 img {
+  max-width: 80%;
+  margin-right: -8px;
+  height: auto;
+}
+
+.content-div2 {
+  flex: 1;
+  text-align: right;
+  direction: rtl;
+  margin-left: -200px;
+}
+
+.content-div2 h2 {
+  color: #964325;
+  font-weight: 300;
+  font-size: 32px;
+  font-family: Avenir;
+}
+
+.content-div2 h1 {
+  color: #2B2B2B;
+  font-weight: 700;
+  font-size: 48px;
+  width: 400px;
+  font-family: Avenir;
+}
+
+.content-div2 p {
+  color: #2B2B2B;
+  font-weight: 300;
+  font-size: 20px;
+  width: 400px;
+  font-family: Avenir;
+}
+  
+.button2 {
+  width: 196px;
+  height: 56px;
+  margin-top: 30px;
+  font-family: Avenir;
+  font-size: 15px;
+  font-weight: 400px;
+  background-color: #964325;
+  color: #F1EEE7;
+  border: none;
+  border-radius: 10px;
+  font-family: 'Avenir', sans-serif;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.button2:hover {
+  background-color: #411d10;
+}
+
+/* MENU SECTION STYLE */
+.menu-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #EBF1EF;
+  padding: 0;
+}
+
+
+.menu-div {
+  text-align: right;
+  margin-right: -850px;
+  margin-top: 20px;
+}
+
+.menu-div h2 {
+  font-size: 40px;
+  font-weight: 300;
+  color: #FFA972;
+  font-family: Avenir;
+}
+
+.menu-div h1 {
+  font-size: 64px;
+  color: #333333;
+  font-weight: 700;
+  font-family: Avenir;
+}
+
+.items-div {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.item {
+  width: 273.78px;
+  height: 300px;
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 30px;
+  border-radius: 40px;
+}
+
+.item img {
+  width: 180px;
+  height: auto;
+  margin-top: -40px;
+}
+
+.item h1 {
+  font-size: 20px;
+  font-weight: bolder;
+  font-family: Avenir;
+  color: #333333;
+  text-align: center;
+}
+
+.item p {
+  width: 202px;
+  font-size: 15px;
+  font-weight: 300;
+  margin-top: -5px;
+  font-family: Avenir;
+  color: #333333;
+  text-align: center;
+}
+
+.item h3 {
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: -5px;
+  font-family: Avenir;
+  color: #333333;
+  text-align: center;
+}
