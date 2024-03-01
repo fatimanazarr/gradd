@@ -15,7 +15,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative; /* Add this line */
+    position: relative; 
   }
   
   .logo h1 {
@@ -44,12 +44,13 @@
     width: 240px;
     height: 33px;
   }
+
   /* تصميم الدائرة البيجي اللي بالسكشن الاول*/
   .image {
 
     position: absolute;
-    top: -30px; /* Adjust this value to move the image up */
-    z-index: -1; /* Add this line to move the image to the back */
+    top: -30px; /*  this value to move the image up */
+    z-index: -1; /*  move the image to the back */
   }
   
   .image img{
@@ -97,7 +98,7 @@
   
   .right-div h2:nth-of-type(2) {
     font-size: 110px;
-    margin-top: -80px; /* Adjust this value to move the heading up */
+    margin-top: -80px; /*move the heading up */
     font-family: 'Mirza';
     color: black;
   }
@@ -136,9 +137,9 @@
   
   .right-div img {
     display: block;
-    margin-top: 100px; /* Adjust this value to set the desired spacing */
-    width: 75%; /* Adjust this value to set the desired width */
-    height: auto; /* Adjust this value to maintain the aspect ratio */
+    margin-top: 100px; 
+    width: 75%; 
+    height: auto; 
   }
   .explore-button:hover::before {
     left: 100%;
@@ -400,23 +401,6 @@
   height: 556px;
 }
 
-.overlay {
-  position: absolute;
-  top: 70%;
-  right: 30%;
-  transform: translate(-50%, -50%);
-}
-
-.reviews-button {
-  border-radius: 50px;
-  width: 270px;
-  height: 74px;
-  background-color: rgba(255, 255, 255, 0.7);
-  border: 1px solid #964325;
-  font-family: Avenir;
-  font-size: 20px;
-  font-weight: bold;
-}
 
 .div2 h3 {
   color: #FFA972;

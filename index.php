@@ -88,52 +88,55 @@
   </div>
   <div class="items-div">
     <div class="item">
-      <img src="img/Appetizers/Crab_salad_.png" alt="Image 1">
-      <h1>عنوان العنصر 1</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
-      <h3>تفاصيل العنصر 1</h3>
+      <img id="Dish_image_0">
+      <h1 id="Dish_name_0"></h1>
+      <p id="Dish_desc_0"></p>
+      <h3 id="Dish_price_0"></h3>
     </div>
     <div class="item">
-      <img src="img/Appetizers/greekSalad.png" alt="Image 2">
-      <h1>عنوان العنصر 2</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
-      <h3>تفاصيل العنصر 2</h3>
+      <img id="Dish_image_1">
+      <h1 id="Dish_name_1"></h1>
+      <p id="Dish_desc_1"></p>
+      <h3 id="Dish_price_1"></h3>
+    </div>
+
+    <div class="item">
+      <img id="Dish_image_2">
+      <h1 id="Dish_name_2"></h1>
+      <p id="Dish_desc_2"></p>
+      <h3 id="Dish_price_2"></h3>
     </div>
     <div class="item">
-      <img src="img/Appetizers/Bufflo_wings_.png" alt="Image 3">
-      <h1>عنوان العنصر 3</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
-      <h3>تفاصيل العنصر 3</h3>
+      <img id="Dish_image_3">
+      <h1 id="Dish_name_3"></h1>
+      <p id="Dish_desc_3"></p>
+      <h3 id="Dish_price_3"></h3>
+    </div>
+
+    <div class="item">
+      <img id="Dish_image_4">
+      <h1 id="Dish_name_4"></h1>
+      <p id="Dish_desc_4"></p>
+      <h3 id="Dish_price_4"></h3>
     </div>
     <div class="item">
-      <img src="img/Appetizers/Bufflo_wings_.png" alt="Image 3">
-      <h1>عنوان العنصر 3</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
-      <h3>تفاصيل العنصر 3</h3>
+      <img id="Dish_image_5">
+      <h1 id="Dish_name_5"></h1>
+      <p id="Dish_desc_5"></p>
+      <h3 id="Dish_price_5"></h3>
+    </div>
+
+    <div class="item">
+      <img id="Dish_image_6">
+      <h1 id="Dish_name_6"></h1>
+      <p id="Dish_desc_6"></p>
+      <h3 id="Dish_price_6"></h3>
     </div>
     <div class="item">
-      <img src="img/Appetizers/Crab_salad_.png" alt="Image 1">
-      <h1>عنوان العنصر 1</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
-      <h3>تفاصيل العنصر 1</h3>
-    </div>
-    <div class="item">
-      <img src="img/Appetizers/greekSalad.png" alt="Image 2">
-      <h1>عنوان العنصر 2</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
-      <h3>تفاصيل العنصر 2</h3>
-    </div>
-    <div class="item">
-      <img src="img/Appetizers/Bufflo_wings_.png" alt="Image 3">
-      <h1>عنوان العنصر 3</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
-      <h3>تفاصيل العنصر 3</h3>
-    </div>
-    <div class="item">
-      <img src="img/Appetizers/Bufflo_wings_.png" alt="Image 3">
-      <h1>عنوان العنصر 3</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
-      <h3>تفاصيل العنصر 3</h3>
+      <img id="Dish_image_7">
+      <h1 id="Dish_name_7"></h1>
+      <p id="Dish_desc_7"></p>
+      <h3 id="Dish_price_7"></h3>
     </div>
     <button class="more-button">استكشاف المزيد</button> <!-- Added button -->
   </div>
@@ -143,16 +146,14 @@
   <div class="div1">
     <div class="image-container">
       <img src="images/reviews circle.jpg" alt="Customer Reviews">
-      <div class="overlay">
-        <button class="reviews-button">قراءة آراء جميع الزبائن</button>
-      </div>
+      
     </div>
   </div>
   <div class="div2">
     <h3>المراجعات</h3>
     <h1>زبائننا الرائعين يحبّون مطعمنا</h1>
-    <p>تبدأ قصتنا بشغف للمأكولات الإيطالية الأصيلة، حيث تمتزج بسلاسة مع دفء ونكهات التقاليد العراقية. يتموضع مطعم سالا في قلب بغداد، وهو أكثر من مجرد مطعم؛ إنه احتفال بتنوع وثراء تاريخ الثقافات الطهي.</p>
-    <h4>Sarah James</h4>
+    <p id="customer_review"></p>
+    <h4 id="customer_name"></h4>
     <div class="icon-container">
       <div class="icon-circle"><i class="fas fa-chevron-right"></i></div>
       <div class="icon-circle"><i class="fas fa-chevron-left"></i></div>
@@ -189,5 +190,6 @@
   </div>
   <p class="footer-caption">2024 Fatima Nazar & Athraa Qais. All Rights Reserved.</p>
 </section>
+<script src="script.js"></script>
 </body>
 </html>
