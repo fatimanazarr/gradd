@@ -7,27 +7,38 @@
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
-<body>
-<section class="hero-section" style="direction: rtl;">
-  <div class="navbar">
-    <div class="logo">
-      <h1>سالا</h1>
+<body style="background-color: #EBF1EF;">
+<section class="hero-section2" style="direction: rtl; " >
+    
+  <div class="navbar2">
+    <div class="logo2">
+      <h1>بغتاليا</h1>
     </div>
-    <div class="menu">
+    <div class="menu2">
       <ul>
-        <li>الرئيسية</li>
-        <li>قائمة الطعام</li>
+        <li><a href="index.php" style="text-decoration: none; color: white;">الرئيسية</a></li>
+        <li><a href="appetizers.php" style="text-decoration: none; color: white;">قائمة الطعام</a></li>
         <li>من نحن</li>
         <li>تواصل معنا</li>
       </ul>
     </div>
-    <div class="search">
+    <div class="search2">
       <input type="text" value="البحث">
     </div>
   </div>
-  <div class="banner">
-    <img src="Images/appetizers.png" alt="Banner Image" style="height: 500px; width: 100%;">
-  </div>
+  
 </section>
+
+<section class="categories-section">
+<ul class="categories-list" style="direction: rtl;">
+  <li><a href="#" onclick="fetchAndPopulateMenuItems('مقبلات')">المقبلات</a></li>
+  <li><a href="#" onclick="fetchAndPopulateMenuItems('بيتزا')">البيتزا</a></li>
+  <li><a href="#" onclick="fetchAndPopulateMenuItems('باستا')">الباستا</a></li>
+  <li><a href="#" onclick="fetchAndPopulateMenuItems('تحلية')">التحلية</a></li>
+  <li><a href="#" onclick="fetchAndPopulateMenuItems('مشروبات')">المشروبات</a></li>
+</ul>
+<div class="menu-items"></div>
+</section>
+<script src="script.js"></script>
 </body>
 </html>

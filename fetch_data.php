@@ -5,7 +5,7 @@ $database = new PDO("mysql:host=localhost;dbname=db5;", $username, $password);
  
 if ($database) { 
     // Query the menu table and retrieve the data 
-    $menu_sql = "SELECT DishID, DishName, DishDescription, TotalPrice FROM menu"; 
+    $menu_sql = "SELECT DishID, DishCategory, DishName, DishDescription, TotalPrice FROM menu"; 
     $menu_statement = $database->query($menu_sql); 
     $menu_data = $menu_statement->fetchAll(PDO::FETCH_ASSOC); 
 

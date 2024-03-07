@@ -12,15 +12,15 @@
 <section class="hero-section" style="direction: rtl;">
   <div class="navbar">
     <div class="logo">
-      <h1>سالا</h1>
+      <h1>بغتاليا</h1>
     </div>
     <div class="image">
       <img src="Images/Vector 1.png" alt="Circle Image">
     </div>
     <div class="menu">
       <ul>
-        <li>الرئيسية</li>
-        <li>قائمة الطعام</li>
+        <li><a href="index.php" style="text-decoration: none; ">الرئيسية</a></li>
+        <li><a href="appetizers.php" style="text-decoration: none; ">قائمة الطعام</a></li>
         <li>من نحن</li>
         <li>تواصل معنا</li>
       </ul>
@@ -35,7 +35,7 @@
     <div class="right-div">
       <h3>حيث يلتقي قلب إيطاليا بروح بغداد</h3>
       <h2>مرحبًا بكم في</h2>
-      <h2>مطعم سالا</h2>
+      <h2>مطعم بغتاليا</h2>
       <p>
         انضموا إلينا في الاحتفال بتوازن عالمين مطبخيين، حيث يروي كل طبق قصة حب وعاطفة، وفرح مشترك في الطعام اللذيذ. مرحبًا في سالا - حيث تتحد إيطاليا والعراق لخلق تجربة تناول طعام فريدة من نوعها!
       </p>
@@ -138,7 +138,7 @@
       <p id="Dish_desc_7"></p>
       <h3 id="Dish_price_7"></h3>
     </div>
-    <button class="more-button">استكشاف المزيد</button> <!-- Added button -->
+    <button class="more-button">استكشاف المزيد</button>
   </div>
 </section>
 

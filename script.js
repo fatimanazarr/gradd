@@ -51,6 +51,56 @@ function populateMenuItems() {
 // Call the function to populate the menu items
 populateMenuItems();
 
+
+document.addEventListener("DOMContentLoaded", function() {
+  fetchAndPopulateMenuItems('مقبلات');
+});
+function fetchAndPopulateMenuItems(category) {
+  fetch("fetch_data.php?category=" + category)
+    .then(response => response.json())
+    .then(data => {
+      const menuData = data.menu;
+      const imagesData = data.images;
+
+      const menuDiv = document.querySelector(".menu-items");
+      menuDiv.innerHTML = ""; // Clear the previous content
+
+      menuData.forEach((item, index) => {
+        if (item.DishCategory === category) {
+          const itemDiv = document.createElement("div");
+          itemDiv.classList.add("menu-item");
+
+          const dishImage = document.createElement("img");
+          dishImage.id = `dish-image-${index}`;
+          itemDiv.appendChild(dishImage);
+
+          const dishName = document.createElement("h1");
+          dishName.id = `dish-name-${index}`;
+          itemDiv.appendChild(dishName);
+
+          const dishDesc = document.createElement("p");
+          dishDesc.id = `dish-desc-${index}`;
+          itemDiv.appendChild(dishDesc);
+
+          const dishPrice = document.createElement("h3");
+          dishPrice.id = `dish-price-${index}`;
+          itemDiv.appendChild(dishPrice);
+
+          menuDiv.appendChild(itemDiv);
+
+          const imageIndex = imagesData.findIndex(img => img.DishName === item.DishName);
+          dishImage.src = imagesData[imageIndex].Dishimage;
+          dishName.textContent = item.DishName;
+          dishDesc.textContent = item.DishDescription;
+          dishPrice.textContent = `$${item.TotalPrice}`;
+        }
+      });
+    })
+    .catch(error => {
+      console.error("Error:", error);
+    });
+}
+
 // Call the initial display
 fetch("fetch_data.php")
   .then(response => response.json())
