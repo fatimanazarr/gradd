@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="resp.css">
+    <title>الرئيسية</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
     <link rel="stylesheet" href="style.css">
 </head>
@@ -21,7 +20,7 @@
       <ul>
         <li><a href="index.php" style="text-decoration: none; ">الرئيسية</a></li>
         <li><a href="appetizers.php" style="text-decoration: none; ">قائمة الطعام</a></li>
-        <li>من نحن</li>
+        <li><a href="about.php" style="text-decoration: none; ">من نحن</a></li>
         <li>تواصل معنا</li>
       </ul>
     </div>
@@ -39,7 +38,7 @@
       <p>
         انضموا إلينا في الاحتفال بتوازن عالمين مطبخيين، حيث يروي كل طبق قصة حب وعاطفة، وفرح مشترك في الطعام اللذيذ. مرحبًا في سالا - حيث تتحد إيطاليا والعراق لخلق تجربة تناول طعام فريدة من نوعها!
       </p>
-     <button class="explore-button">إستكشاف قائمة الطعام</button>
+     <button class="explore-button" onclick="window.location.href = 'appetizers.php';">إستكشاف قائمة الطعام</button>
      <img src="images/pizza slice.png" alt="Image Description">
 
     </div>
@@ -74,7 +73,7 @@
     <h2>من نحن</h2>
     <h1>قائمة طعام تُسعِد الحواس وتحكي قصة</h1>
     <p>انضموا إلينا في الاحتفال بتوازن عالمين مطبخيين، حيث يروي كل طبق قصة حب وعاطفة، وفرح مشترك في الطعام اللذيذ. مرحبًا في سالا - حيث تتحد إيطاليا والعراق لخلق تجربة تناول طعام فريدة من نوعها!</p>
-    <button class="button2">استكشاف قصتنا</button>
+    <button class="button2" onclick="window.location.href = 'about.php';">استكشاف قصتنا</button>
   </div>
   <div class="image-div2">
     <img src="images/salaPizza.png" alt="Image">
@@ -138,7 +137,7 @@
       <p id="Dish_desc_7"></p>
       <h3 id="Dish_price_7"></h3>
     </div>
-    <button class="more-button">استكشاف المزيد</button>
+    <button class="more-button" onclick="window.location.href = 'appetizers.php';">استكشاف المزيد</button>
   </div>
 </section>
 

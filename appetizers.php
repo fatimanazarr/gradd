@@ -18,7 +18,7 @@
       <ul>
         <li><a href="index.php" style="text-decoration: none; color: white;">الرئيسية</a></li>
         <li><a href="appetizers.php" style="text-decoration: none; color: white;">قائمة الطعام</a></li>
-        <li>من نحن</li>
+        <li><a href="appetizers.php" style="text-decoration: none;">من نحن</a></li>
         <li>تواصل معنا</li>
       </ul>
     </div>

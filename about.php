@@ -26,7 +26,8 @@
       </div>
     </div>
     
-  </section>
+</section>
+<section> </section>
   <section class="new-section">
       <div class="leftaboutUs-div">
         <img src="Images/AboutUs.png" alt="Image">
@@ -43,7 +44,7 @@
         نحن نسعى جاهدين لتقديم تجربة تناول طعام فاخرة تجمع بين مأكولات إيطاليا الشهيرة وتراث بغدادي غني. تفخر مطبخنا بالتحلي بالدقة في اختيار المكونات والإعداد الفني، مما يعكس حبنا للطهي والاهتمام بتفاصيل كل طبق.
 
         </p>
-        <button class="explore-button3">إستكشاف قائمة الطعام</button>
+        <button class="explore-button3" onclick="window.location.href = 'appetizers.php';">إستكشاف قائمة الطعام</button>
       </div>
     </section>
 
