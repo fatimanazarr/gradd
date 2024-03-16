@@ -10,7 +10,37 @@
   padding: 1%;
   margin-top: -3%; /* Adjust this value to move the section up */
 }
+.menu-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100vh;
+  background-color: #000;
+  color: #fff;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
 
+.menu-bar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menu-bar ul li {
+  margin-bottom: 10px;
+}
+
+/* CSS styles for the menu bar icon */
+.menu-icon {
+  display: none;
+  font-size: 20px;
+  color: #000;
+  cursor: pointer;
+}
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -660,20 +690,21 @@ margin-right: 60px; /* Adjust the desired spacing between the elements */
 display: flex;
 justify-content: center;
 flex-wrap: wrap;
-gap: 20px;
+gap: 30px;
 margin-top: 60px;
 }
 
 .menu-item {
-width: 273.78px;
-height: 300px;
-background-color: #FFFFFF;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-margin: 30px;
-border-radius: 40px;
+  width: 273.78px;
+  height: 300px;
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end; /* Adjust the vertical alignment as needed */
+  margin: 30px;
+  border-radius: 40px;
+  position: relative; /* Add this property for button positioning */
 }
 
 .menu-item img {
@@ -692,7 +723,7 @@ text-align: center;
 
 .menu-item p {
 width: 202px;
-font-size: 15px;
+font-size: 13px;
 font-weight: 300;
 margin-top: -5px;
 font-family: Avenir;
@@ -708,7 +739,21 @@ font-family: Avenir;
 color: #333333;
 text-align: center;
 }
-
+.add-to-basket-button {
+  background-color: #964325;
+  width: 125px;
+  height: 30px;
+  margin-bottom: 15px;
+  font-family: "Avenir";
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none; /* Remove the border */
+  box-shadow: none;
+}
 
 /************ ABOUT US PAGE STYLE *****************/
 .hero-section3 {
@@ -934,3 +979,4 @@ font-family: Avenir;
   border: none;
   margin-top: 20px;
 }
+

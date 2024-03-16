@@ -1,6 +1,9 @@
 // Add an index variable to keep track of the current review
 let currentIndex = 0;
-
+function toggleMenu() {
+  var menuBar = document.querySelector('.menu-bar');
+  menuBar.style.display = (menuBar.style.display === 'flex') ? 'none' : 'flex';
+}
 // دالة لعرض الريفيو مال الاندكس الحالي
 function displayReview(data, index) {
   const reviewData = data.reviews[index];
@@ -85,6 +88,14 @@ function fetchAndPopulateMenuItems(category) {
           const dishPrice = document.createElement("h3");
           dishPrice.id = `dish-price-${index}`;
           itemDiv.appendChild(dishPrice);
+
+          // Create the "Add to Basket" button
+          const addToBasketButton = document.createElement("button");
+          addToBasketButton.textContent = "إضافة للسلة";
+          addToBasketButton.classList.add("add-to-basket-button");
+
+          // Append the button after the price
+          itemDiv.appendChild(addToBasketButton);
 
           menuDiv.appendChild(itemDiv);
 

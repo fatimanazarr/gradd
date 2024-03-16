@@ -6,6 +6,7 @@
     <title>الرئيسية</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="resp.css">
 </head>
 <body>
 <section class="hero-section" style="direction: rtl;">
@@ -24,6 +25,7 @@
         <li>تواصل معنا</li>
       </ul>
     </div>
+    <div class="menu-icon" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></div>
     <div class="search">
       <input type="text" value="البحث">
     </div>
@@ -189,6 +191,7 @@
   </div>
   <p class="footer-caption">2024 Fatima Nazar & Athraa Qais. All Rights Reserved.</p>
 </section>
+<script src="https://kit.fontawesome.com/4c6be1067d.js" crossorigin="anonymous"></script>
 <script src="script.js"></script>
 </body>
 </html>
