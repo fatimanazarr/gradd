@@ -1,8 +1,16 @@
 // Add an index variable to keep track of the current review
 let currentIndex = 0;
 function toggleMenu() {
-  var menuBar = document.querySelector('.menu-bar');
-  menuBar.style.display = (menuBar.style.display === 'flex') ? 'none' : 'flex';
+  var menu = document.querySelector('.menu');
+  var closeIcon = document.querySelector('.close-icon');
+  
+  if (menu.style.display === 'flex') {
+    menu.style.display = 'none';
+    closeIcon.style.display = 'none';
+  } else {
+    menu.style.display = 'flex';
+    closeIcon.style.display = 'block';
+  }
 }
 // دالة لعرض الريفيو مال الاندكس الحالي
 function displayReview(data, index) {

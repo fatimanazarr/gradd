@@ -19,6 +19,7 @@
     </div>
     <div class="menu">
       <ul>
+      <div class="close-icon" onclick="toggleMenu()"><i class="fa-solid fa-times"></i></div>
         <li><a href="index.php" style="text-decoration: none; ">الرئيسية</a></li>
         <li><a href="appetizers.php" style="text-decoration: none; ">قائمة الطعام</a></li>
         <li><a href="about.php" style="text-decoration: none; ">من نحن</a></li>
@@ -162,7 +163,7 @@
   </div>
 </section>
 <section class="footer-section">
-  <div class="left-div">
+  <div class="left-div3">
     <div class="footer-item">
       <h3>روابط مفيدة</h3>
       <h5>من نحن</h5>
