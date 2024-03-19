@@ -367,7 +367,7 @@
 
     .categories-list {
       margin-top: -10px;
-      
+      gap: 10px;
     }
   
   
@@ -385,53 +385,400 @@
   }
   
   .menu-item img {
-  width: 100px;
+  width: 120px;
   height: auto;
   margin-top: -50px;
   }
-  
-  .menu-item h1 {
-  font-size: 20px;
-  font-weight: bolder;
-  font-family: Avenir;
-  color: #333333;
-  text-align: center;
-  }
-  
-  .menu-item p {
-  width: 202px;
-  font-size: 13px;
-  font-weight: 300;
-  margin-top: -5px;
-  font-family: Avenir;
-  color: #333333;
-  text-align: center;
-  }
-  
-  .menu-item h3 {
-  font-size: 16px;
-  font-weight: 400;
-  margin-top: -5px;
-  font-family: Avenir;
-  color: #333333;
-  text-align: center;
-  }
-  .add-to-basket-button {
-    background-color: #964325;
-    width: 125px;
-    height: 30px;
-    margin-bottom: 15px;
-    font-family: "Avenir";
-    color: white;
-    font-size: 16px;
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: none; /* Remove the border */
-    box-shadow: none;
-  }
-  
-  
+ 
 }
 
+@media only screen and (min-width: 391px) and (max-width: 490px) {
+  .logo h1 {
+    font-size: 40px;
+    margin-top: 6%;
+    margin-right: -2%;
+  }
+  
+  .menu {
+    display: none;
+  }
+  .menu ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .menu ul li {
+    margin-left: 30px;
+    margin-bottom: 10px;
+    width: 100px;
+    font-size: 15px;
+}
+  .menu-icon {
+    display: inline-block;
+    margin-right: 65%;
+    margin-top: -15px;
+  }
+  .menu.open {
+    left: 0;
+  }
+  .menu-bar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  z-index: 9999;
+  background: #fff;
+  overflow-y: auto;
+}
+  
+  .navbar {
+    justify-content: flex-start;
+  }
+  .search{
+    display: none;
+  }
+
+  /* تصميم الدائرة البيجي اللي بالسكشن الاول*/
+  .image {
+      display: none;
+  }
+
+  .content-section {
+      display: flex;
+      margin-top: -10px;
+      padding: 0 90px 0 0;
+    }
+      /* تصميم الدائرة مال الاطباق اللي بالسكشن الاول*/
+    
+    .left-div {
+      display: none;
+    }
+      /* تصميم النصوص مال المطعم اللي بالسكشن الاول*/
+    
+    .right-div {
+      margin-right: -20%;
+      margin-top: 10%;
+      direction: rtl;
+    }
+    
+    .right-div h3 {
+      font-size: 12px;
+    }
+    
+    .right-div h2 {
+      font-size: 35px;
+      margin-top: -15px;
+    }
+    
+    .right-div h2:nth-of-type(2) {
+      font-size: 50px;
+      margin-top: -45px; 
+    }
+    .right-div p {
+      font-size: 14px;
+      margin-top: -25px;
+      width: 300px;
+    }
+      /* تصميم البتن مال المنيو اللي بالسكشن الاول*/
+    
+    .explore-button {
+      width: 106px;
+      height: 36px;
+      font-size: 8px;
+      border-radius: 5px;
+    }
+
+    .right-div img {
+      margin-top: 70px; 
+      width: 65%; 
+    }
+    .explore-button:hover::before {
+      left: 100%;
+    }
+    
+
+  /******** SERVICE RESPONSITIVITY ************/
+    .three-divs-section {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .divx {
+      margin-top: 10px;
+          width: 286PX;
+          height: 293px;
+          border-radius: 30px;
+    }
+    .divx img {
+      height: 130px;
+      margin-top: 20px;
+      }
+      
+      .divx h1 {
+      font-size: 16px;
+      }
+      .divx p {
+          color: #333333;
+          font-size: 13px;
+          width: 250px;
+          margin-left: 20px;
+          font-family: Avenir;
+          }
+      
+  /******** END OF SERVICE RESPONSITIVITY ************/   
+  
+  
+/*****************Our Story Section ********************/
+.two-divs-section {
+
+  margin-top: 20%;
+  }
+  .image-div2 img {
+      max-width: 40%;
+      margin-right: -8px;
+      height: auto;
+      }
+  .content-div2 {
+  margin-right: -230px;
+  }
+  
+  .content-div2 h2 {
+  font-size: 13px;
+  }
+  
+  .content-div2 h1 {
+  font-size: 18px;
+  width: 180px;
+  }
+  
+  .content-div2 p {
+  font-weight: 300;
+  font-size: 9px;
+  width: 190px;
+  font-family: Avenir;
+  }
+  
+  .button2 {
+  width: 90px;
+  height: 23px;
+  margin-top: 6%;
+  margin-bottom: 6%;
+  font-size: 10px;
+  border: none;
+  box-shadow: none;
+  border-radius: 5px;
+  }
+  /*****************END OF Our Story Section RESPONSITIVITY ********************/
+
+      
+      
+      .menu-div {
+      margin-right: -40%;
+      }
+      
+      .menu-div h2 {
+      font-size: 16px;
+      }
+      
+      .menu-div h1 {
+      font-size: 25px;
+      margin-top: -10px;
+      }
+      
+
+
+      /* REVIEWS SECTION STYLE */
+  .reviews-section {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    }
+    
+    .div1 {
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: -40px;
+    }
+    
+    .div2 {
+    max-width: 450px;
+    margin-left: 150px;
+    margin-top: 20px;
+    }
+    
+    
+    .image-container img {
+    width:150px;
+    height: 150px;
+    }
+    
+    
+    .div2 h3 {
+    font-size: 15px;
+    }
+    
+    .div2 h1 {
+    color: #2B2B2B;
+    font-size: 20px;
+    width: 150px;
+    margin-top: -15px;
+    font-weight: bold;
+    font-family: Avenir;
+    line-height: 28px;
+    
+    }
+    
+    .div2 p {
+    font-size: 15px;
+    margin-top: 10px;
+    }
+    
+    .div2 h4 {
+    font-size: 16px;
+    }
+  
+    
+    .icon-container .icon-circle {
+
+    width: 28px;
+    height: 28px;
+    }
+    
+    .icon-container .icon-circle i {
+    font-size: 10px;
+    }
+    
+
+/* FOOTER SECTION STYLE */
+.footer-section {
+flex-direction: column;
+align-items: center;
+height: 50%;
+margin-bottom: 25%;
+}
+
+.left-div3 {
+margin-right: 75px;
+margin-top: 10px;
+text-align: center;
+}
+
+.footer-item {
+margin-right: 15px;
+
+}
+.footer-item h5
+{
+font-size: 10px;
+width: 100px;
+}
+.footer-item h3
+{
+font-size: 12px;
+}
+
+.right-div3 {
+margin-right: 0;
+margin-bottom: 20px;
+text-align: center;
+}
+
+.right-div3 h1 {
+font-size: 50px;
+margin-top: -10px;
+margin-bottom: 20px;
+margin-right: -250px;
+}
+.right-div3 p {
+font-size: 16px;
+max-width: 200px;
+margin-right: -110px;
+margin-top: -10px;
+text-align: right;
+display: inline-block;
+}
+
+.right-div3 .social-icons {
+display: flex;
+justify-content: flex-end;
+align-items: center;
+direction: ltr;
+margin-right: -125px;
+}
+
+.right-div3 .social-icons img {
+width: 20px;
+height: 20px;
+margin: 0 15px;
+}
+.footer-caption {
+width: 250px;
+bottom: 30px;
+font-size: 10px;
+}
+
+
+
+
+
+
+
+/****** Appetizers Page css responsitvity *****/
+.hero-section2{
+  background-size: 100%;
+  height: 200px;
+  
+  }
+  .navbar2 {
+    justify-content: flex-start;
+    }
+  .logo2 h1 {
+    font-size: 30px;
+    margin-top: 6%;
+    margin-right: 2%;
+  }
+  .menu2{
+    display: none;
+  }
+  .menu2 ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      
+   }
+  .menu2 ul li {
+    
+    margin-left: 30px;
+    margin-bottom: 10px;
+    width: 100px;
+    font-size: 15px;
+    }
+    
+  .search2 input {
+      display: none;
+  }
+
+  /************ CATEGORIES SECTION */
+
+  .categories-list {
+    margin-top: 20px;
+    gap: 20px;
+  }
+  .categories-list a {
+      font-size: 16px;
+      margin-right: -60px; /* Adjust the margin as needed */
+  }
+  .menu-items {
+    margin-top: 50px;
+    margin-bottom: 65%;
+    }
+  .menu-item {
+    width: 220.78px;
+    height: 250px;
+}
+
+.menu-item img {
+width: 120px;
+margin-bottom: 2px;
+height: auto;
+}
+}
