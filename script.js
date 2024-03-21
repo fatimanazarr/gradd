@@ -120,6 +120,8 @@ function fetchAndPopulateMenuItems(category) {
     });
 }
 
+
+
 // Call the initial display
 fetch("fetch_data.php")
   .then(response => response.json())

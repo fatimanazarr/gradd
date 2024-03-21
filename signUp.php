@@ -23,24 +23,71 @@
     <div class="bottom-section">
       <h1 class="form-title">إنشاء حساب</h1>
       <p class="form-description">يرجى إدخال المعلومات المطلوبة بالأسفل</p>
-      <form class="form" style="direction: rtl;">
-      <div class="form-group">
-        <input type="text" class="input-box" placeholder="الاسم الأول">
-        <input type="text" class="input-box" placeholder="الاسم الأخير">
-      </div>
-        <div class="form-group">
-        <input type="text" class="input-box" placeholder="رقم الهاتف" style="width: 350px;">
-        </div>
-        <div class="form-group">
-        <input type="text" class="input-box" placeholder="كلمة المرور" style="width: 350px;">
-        </div>
-        <div class="form-group">
-        <input type="text" class="input-box" placeholder="تأكيد كلمة المرور" style="width: 350px;">
-        </div>
-        <button type="submit" class="submit-button">إرسال</button>
-      </form>
+      <form class="form" style="direction: rtl;" method="post">
+  <div class="form-group">
+    <input type="text" class="input-box" placeholder="الاسم الأول" name="CustomerFirstName">
+    <input type="text" class="input-box" placeholder="الاسم الأخير" name="CustomerLastName">
+  </div>
+  <div class="form-group">
+    <input type="text" class="input-box" placeholder="رقم الهاتف" style="width: 350px;" name="CustomerPhone">
+  </div>
+  <div class="form-group">
+    <input type="password" class="input-box" placeholder="كلمة المرور" style="width: 350px;" name="CustomerPassword">
+  </div>
+
+  <button type="submit" class="submit-button">إرسال</button>
+</form>
     </div>
   </div>
 </section>
+<script>
+ function signUp() {
+  // Retrieve the form inputs
+  var firstName = document.querySelector('input[name="CustomerFirstName"]').value;
+  var lastName = document.querySelector('input[name="CustomerLastName"]').value;
+  var phone = document.querySelector('input[name="CustomerPhone"]').value;
+  var password = document.querySelector('input[name="CustomerPassword"]').value;
+
+  console.log('Form Data:');
+  console.log('First Name:', firstName);
+  console.log('Last Name:', lastName);
+  console.log('Phone:', phone);
+  console.log('Password:', password);
+
+  // Create a URL-encoded string from the form data
+  var formData = new URLSearchParams();
+  formData.append('CustomerFirstName', firstName);
+  formData.append('CustomerLastName', lastName);
+  formData.append('CustomerPhone', phone);
+  formData.append('CustomerPassword', password);
+
+  // Send a POST request to the server
+  fetch('fetch_data.php', {
+    method: 'POST',
+    body: formData
+  })
+    .then(function (response) {
+      if (response.ok) {
+        // Successful response
+        console.log('Sign-up successful!');
+        // Add any further actions or redirects here
+      } else {
+        // Error occurred
+        console.log('Sign-up failed!');
+      }
+    })
+    .catch(function (error) {
+      // Error occurred during the request
+      console.error('Error:', error);
+    });
+}
+
+// Add an event listener to the form's submit event
+document.querySelector('.form').addEventListener('submit', function (event) {
+  event.preventDefault(); // Prevent the default form submission
+  signUp(); // Call the signUp function
+});
+
+</script>
 </body>
 </html>
