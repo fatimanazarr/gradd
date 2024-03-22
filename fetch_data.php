@@ -1,57 +1,36 @@
-<?php
-$username = "root";
-$password = "";
-$database = new PDO("mysql:host=localhost;dbname=db5;", $username, $password);
+<?php 
+$username = "root"; 
+$password = ""; 
+$database = new PDO("mysql:host=localhost;dbname=db5;", $username, $password); 
+ 
+if ($database) { 
+    // Query the menu table and retrieve the data 
+    $menu_sql = "SELECT DishID, DishCategory, DishName, DishDescription, TotalPrice FROM menu"; 
+    $menu_statement = $database->query($menu_sql); 
+    $menu_data = $menu_statement->fetchAll(PDO::FETCH_ASSOC); 
 
-if ($database) {
-    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-        try {
-            // Retrieve the form data
-            $customerFirstName = $_POST['CustomerFirstName'] ?? '';
-            $customerLastName = $_POST['CustomerLastName'] ?? '';
-            $customerPhone = $_POST['CustomerPhone'] ?? '';
-            $customerPassword = $_POST['CustomerPassword'] ?? '';
+    $images_sql = "SELECT DishName, Dishimage FROM images"; // Select only the 'image' column
+    $images_statement = $database->query($images_sql); 
+    $images_data = $images_statement->fetchAll(PDO::FETCH_ASSOC); 
 
-            // Debugging statements
-            var_dump($customerFirstName);
-            var_dump($customerLastName);
-            var_dump($customerPhone);
-            var_dump($customerPassword);
+    $reviews_sql = "SELECT CustomerName, CustomerReview FROM reviews";
+    $reviews_statement = $database->query($reviews_sql);
+    $reviews_data = $reviews_statement->fetchAll(PDO::FETCH_ASSOC);
 
-            // Prepare the SQL statement
-            $insertSQL = "INSERT INTO Customers (CustomerFirstName, CustomerLastName, CustomerPhone, CustomerPassword) 
-                          VALUES (:CustomerFirstName, :CustomerLastName, :CustomerPhone, :CustomerPassword)";
-            $statement = $database->prepare($insertSQL);
+    $database = null; 
 
-            // Bind the form data to the prepared statement parameters
-            $statement->bindParam(':CustomerFirstName', $customerFirstName);
-            $statement->bindParam(':CustomerLastName', $customerLastName);
-            $statement->bindParam(':CustomerPhone', $customerPhone);
-            $statement->bindParam(':CustomerPassword', $customerPassword);
+    $response = array(
+        "menu" => $menu_data,
+        "images" => $images_data,
+        "reviews" => $reviews_data
+    );
 
-            // Execute the statement
-            if ($statement->execute()) {
-                // Successful insertion
-                $response = array("status" => "success");
-            } else {
-                // Error occurred during insertion
-                $errorInfo = $statement->errorInfo();
-                $response = array("status" => "error", "message" => $errorInfo[2]);
-            }
-        } catch (PDOException $e) {
-            // Handle any PDO exceptions
-            $response = array("status" => "error", "message" => $e->getMessage());
-        }
-    } else {
-        // Handle the case when the request method is not "POST"
-        $response = array("status" => "error", "message" => "Invalid request method.");
-    }
-} else {
-    // Handle the error case
-    $response = array("status" => "error", "message" => "Failed to connect to the database.");
-}
-
-header("Content-Type: application/json");
-echo json_encode($response);
-exit; // Terminate the script to prevent any additional output
+    header("Content-Type: application/json"); 
+    echo json_encode($response); 
+    exit; // Terminate the script to prevent any additional output 
+} else { 
+    // Handle the error case 
+    header("HTTP/1.1 500 Internal Server Error"); 
+    exit; // Terminate the script to prevent any additional output 
+} 
 ?>
