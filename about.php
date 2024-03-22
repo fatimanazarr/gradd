@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link rel="stylesheet" href="resp.css">
     <title>About Us</title>
 </head>
 <body>
@@ -15,12 +17,14 @@
       </div>
       <div class="menu3">
         <ul>
+        <div class="close-icon" onclick="toggleMenu()"><i class="fa-solid fa-times"></i></div>
           <li><a href="index.php" style="text-decoration: none;">الرئيسية</a></li>
           <li><a href="appetizers.php" style="text-decoration: none;">قائمة الطعام</a></li>
           <li><a href="appetizers.php" style="text-decoration: none;">من نحن</a></li>
           <li>تواصل معنا</li>
         </ul>
       </div>
+      <div class="menu-icon" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></div>
       <div class="search3">
         <input type="text" value="البحث">
       </div>
@@ -48,6 +52,8 @@
       </div>
     </section>
 
+    <script src="https://kit.fontawesome.com/4c6be1067d.js" crossorigin="anonymous"></script>
+<script src="script.js"></script>
     
     </body>
 </html>

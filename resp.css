@@ -389,6 +389,80 @@
   margin-top: -50px;
   }
  
+
+  /************ ABOUT US PAGE RESPONSITIVITY ***************/
+  
+    .navbar3 {
+      justify-content: flex-start;
+      }
+    .logo3 h1 {
+      font-size: 40px;
+      margin-top: 6%;
+      margin-right: 3vh;
+    }
+    .menu3{
+      display: none;
+    }
+    .menu3 ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        
+     }
+    .menu3 ul li {
+      
+      margin-left: 30px;
+      margin-bottom: 10px;
+      width: 100px;
+      font-size: 15px;
+      }
+      
+    .search3 input {
+        display: none;
+    }
+    .new-section{
+      margin-bottom: 2vh;
+      }
+      .leftaboutUs-div img{
+      height: 250px;
+      margin-left: 7vh;
+      }
+      .abouUs-div
+      {
+      margin-right: 1%;
+      margin-top: 5vh;
+      }
+      
+      .abouUs-div h3{
+      font-size: 15px; 
+      margin-top: 2vh;
+      }
+      .abouUs-div h1{
+        font-size: 25px; 
+        margin-top: -3vh;
+        }
+        
+        .abouUs-div p{
+        width: 43vh; 
+         font-size: 12px; 
+         line-height: 22px;
+        }
+        .abouUs-div hr{
+        width: 40vh;
+        margin-right: 0vh;
+        }
+        .abouUs-div #AboutBlack{
+          width: 43vh; 
+          font-size: 12px; 
+          line-height: 22px;
+        }
+        .abouUs-div .explore-button3 {
+          width: 180px;
+          height: 36px;
+          margin-right: 9vh;
+        }
+          /************ END OF ABOUT US PAGE RESPONSITIVITY ***************/
+
 }
 
 @media only screen and (min-width: 391px) and (max-width: 490px) {
@@ -645,7 +719,7 @@
 flex-direction: column;
 align-items: center;
 height: 50vh;
-margin-bottom: 20vh;
+margin-bottom: 0vh;
 }
 
 .left-div3 {
@@ -772,6 +846,78 @@ width: 120px;
 margin-bottom: 2px;
 height: auto;
 }
+
+/************ ABOUT US PAGE RESPONSITIVITY ***************/
+  
+.navbar3 {
+  justify-content: flex-start;
+  }
+.logo3 h1 {
+  font-size: 40px;
+  margin-top: 6%;
+  margin-right: 1vh;
+}
+.menu3{
+  display: none;
+}
+.menu3 ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    
+ }
+.menu3 ul li {
+  
+  margin-left: 30px;
+  margin-bottom: 10px;
+  width: 100px;
+  font-size: 15px;
+  }
+  
+.search3 input {
+    display: none;
+}
+
+  .leftaboutUs-div img{
+  height: 300px;
+  margin-left: 7vh;
+  }
+  .abouUs-div
+  {
+  margin-right: 1%;
+  margin-top: 5vh;
+  }
+  
+  .abouUs-div h3{
+  font-size: 18px; 
+  margin-top: 2vh;
+  }
+  .abouUs-div h1{
+    font-size: 30px; 
+    margin-top: -1vh;
+    }
+    
+    .abouUs-div p{
+    width: 43vh; 
+     font-size: 15px; 
+     line-height: 28px;
+    }
+    .abouUs-div hr{
+    width: 40vh;
+    margin-right: 0vh;
+    }
+    .abouUs-div #AboutBlack{
+      width: 43vh; 
+      font-size: 15px; 
+      line-height: 28px;
+    }
+    .abouUs-div .explore-button3 {
+      width: 180px;
+      height: 36px;
+      margin-right: 11vh;
+    }
+      /************ END OF ABOUT US PAGE RESPONSITIVITY ***************/
+
 }
 
 @media only screen and (max-width: 281px) {
