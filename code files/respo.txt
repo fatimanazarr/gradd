@@ -1,0 +1,117 @@
+@media only screen and (max-width: 430px) {
+    .logo h1 {
+      font-size: 40px;
+      margin-top: 5px;
+    }
+    
+    .menu {
+      display: none;
+    }
+    
+    .menu-icon {
+      display: inline-block;
+      margin-right: 240px;
+      margin-top: -15px;
+    }
+    
+    .menu-bar {
+      display: flex;
+    }
+    
+    .navbar {
+      justify-content: flex-start;
+    }
+    .search{
+      display: none;
+    }
+
+    /* تصميم الدائرة البيجي اللي بالسكشن الاول*/
+    .image {
+        display: none;
+    }
+
+    .content-section {
+        display: flex;
+        margin-top: -10px;
+        padding: 0 90px 0 0;
+      }
+        /* تصميم الدائرة مال الاطباق اللي بالسكشن الاول*/
+      
+      .left-div {
+        display: none;
+      }
+        /* تصميم النصوص مال المطعم اللي بالسكشن الاول*/
+      
+      .right-div {
+        margin-right: -70px;
+        margin-top: 50px;
+        direction: rtl;
+      }
+      
+      .right-div h3 {
+        font-size: 12px;
+      }
+      
+      .right-div h2 {
+        font-size: 35px;
+        margin-top: -15px;
+      }
+      
+      .right-div h2:nth-of-type(2) {
+        font-size: 50px;
+        margin-top: -45px; 
+      }
+      .right-div p {
+        font-size: 14px;
+        margin-top: -25px;
+        width: 300px;
+      }
+        /* تصميم البتن مال المنيو اللي بالسكشن الاول*/
+      
+      .explore-button {
+        width: 106px;
+        height: 36px;
+        font-size: 8px;
+        border-radius: 5px;
+      }
+  
+      .right-div img {
+        margin-top: 70px; 
+        width: 65%; 
+      }
+      .explore-button:hover::before {
+        left: 100%;
+      }
+      
+
+    /******** SERVICE RESPONSITIVITY ************/
+      .three-divs-section {
+        flex-direction: column;
+        align-items: center;
+      }
+    
+      .divx {
+        margin-top: 10px;
+            width: 286PX;
+            height: 293px;
+            border-radius: 30px;
+      }
+      .divx img {
+        height: 130px;
+        margin-top: 20px;
+        }
+        
+        .divx h1 {
+        font-size: 16px;
+        }
+        .divx p {
+            color: #333333;
+            font-size: 13px;
+            width: 250px;
+            margin-left: 20px;
+            font-family: Avenir;
+            }
+        
+    /******** END OF SERVICE RESPONSITIVITY ************/        
+  }
+

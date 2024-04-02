@@ -27,8 +27,8 @@
       </ul>
     </div>
     <div class="menu-icon" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></div>
-    <div class="search">
-      <input type="text" value="البحث">
+    <div class="shoppingBag">
+    <i class="fa-solid fa-bag-shopping fa-2xl" style="color: #964325;"></i>
     </div>
   </div>
   
@@ -181,7 +181,7 @@
     </div>
   </div>
   <div class="right-div3">
-    <h1>سالا</h1>
+    <h1>بغتاليا</h1>
     <p>تبدأ قصتنا بشغف للمأكولات الإيطالية الأصيلة.</p>
     <div class="social-icons">
       <img src="images/whatssapp.png" alt="WhatsApp">

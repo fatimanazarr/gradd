@@ -1,17 +1,40 @@
 // Add an index variable to keep track of the current review
 let currentIndex = 0;
-function toggleMenu() {
-  var menu = document.querySelector('.menu');
-  var closeIcon = document.querySelector('.close-icon');
-  
-  if (menu.style.display === 'flex') {
-    menu.style.display = 'none';
-    closeIcon.style.display = 'none';
-  } else {
-    menu.style.display = 'flex';
-    closeIcon.style.display = 'block';
+let selectedItems = [];
+let isMenuOpen = false;
+
+function goToSecondPage() {
+  const params = new URLSearchParams();
+  params.append("selectedItems", JSON.stringify(selectedItems));
+  window.location.href = "shoppingBag.php?" + params.toString();
+}
+function addToCart(id, dishName, dishPrice, dishDescription) {
+  const selectedItemIndex = selectedItems.findIndex(
+    selectedItem => selectedItem.DishName === dishName
+  );
+
+  if (selectedItemIndex !== -1) {
+    // Item already exists in the array, increment the quantity
+    selectedItems[selectedItemIndex].quantity++;
   }
 }
+function toggleMenu(event) {
+  const cartDropdown = document.getElementById("cart-dropdown");
+
+  // Check if the click event originated from the shopping bag icon
+  if (event.target.classList.contains("fa-bag-shopping")) {
+    isMenuOpen = !isMenuOpen;
+
+    if (isMenuOpen) {
+      cartDropdown.style.display = "block";
+    } else {
+      cartDropdown.style.display = "none";
+    }
+  }
+}
+
+// Add a click event listener to the document
+document.addEventListener("click", toggleMenu);
 // دالة لعرض الريفيو مال الاندكس الحالي
 function displayReview(data, index) {
   const reviewData = data.reviews[index];
@@ -32,36 +55,6 @@ function handleIconClick(data, isNext) {
 
   displayReview(data, currentIndex);
 }
-
-function populateMenuItems() {
-  // Fetch the first 8 items from the "menu" and "images" tables
-  fetch("fetch_data.php")
-    .then(response => response.json())
-    .then(data => {
-      const menuData = data.menu.slice(0, 8); // Get the first 8 items from the menu data
-      const imagesData = data.images.slice(0, 8); // Get the first 8 items from the images data
-
-      // Iterate over the menu items and populate the HTML elements
-      menuData.forEach((item, index) => {
-        const dishNameElement = document.getElementById(`Dish_name_${index}`);
-        const dishDescElement = document.getElementById(`Dish_desc_${index}`);
-        const dishImageElement = document.getElementById(`Dish_image_${index}`);
-        const dishPriceElement = document.getElementById(`Dish_price_${index}`);
-
-        dishNameElement.textContent = item.DishName;
-        dishDescElement.textContent = item.DishDescription;
-        dishImageElement.src = imagesData[index].Dishimage;
-        dishPriceElement.textContent = `$${item.TotalPrice}`;
-      });
-    })
-    .catch(error => {
-      console.error("Error:", error);
-    });
-}
-
-// Call the function to populate the menu items
-populateMenuItems();
-
 
 document.addEventListener("DOMContentLoaded", function() {
   fetchAndPopulateMenuItems('مقبلات');
@@ -98,10 +91,34 @@ function fetchAndPopulateMenuItems(category) {
           itemDiv.appendChild(dishPrice);
 
           // Create the "Add to Basket" button
-          const addToBasketButton = document.createElement("button");
-          addToBasketButton.textContent = "إضافة للسلة";
-          addToBasketButton.classList.add("add-to-basket-button");
+      const addToBasketButton = document.createElement("button");
+      addToBasketButton.textContent = "إضافة للسلة";
+      addToBasketButton.classList.add("add-to-basket-button");
 
+      // Add event listener for the "Add to Basket" button
+      addToBasketButton.addEventListener("click", () => {
+        const selectedItemIndex = selectedItems.findIndex(
+          selectedItem => selectedItem.DishName === item.DishName
+        );
+      
+        if (selectedItemIndex !== -1) {
+          // Item already exists in the array, increment the quantity
+          selectedItems[selectedItemIndex].quantity++;
+        } else {
+          // Item doesn't exist in the array, create a new object
+          const selectedItem = {
+            DishName: item.DishName,
+            TotalPrice: item.TotalPrice,
+            DishDescription: item.DishDescription,
+            quantity: 1
+          };
+          selectedItems.push(selectedItem);
+        }
+      
+        console.log(selectedItems);
+       
+        
+      });
           // Append the button after the price
           itemDiv.appendChild(addToBasketButton);
 
@@ -120,6 +137,34 @@ function fetchAndPopulateMenuItems(category) {
     });
 }
 
+function populateMenuItems() {
+  // Fetch the first 8 items from the "menu" and "images" tables
+  fetch("fetch_data.php")
+    .then(response => response.json())
+    .then(data => {
+      const menuData = data.menu.slice(0, 8); // Get the first 8 items from the menu data
+      const imagesData = data.images.slice(0, 8); // Get the first 8 items from the images data
+
+      // Iterate over the menu items and populate the HTML elements
+      menuData.forEach((item, index) => {
+        const dishNameElement = document.getElementById(`Dish_name_${index}`);
+        const dishDescElement = document.getElementById(`Dish_desc_${index}`);
+        const dishImageElement = document.getElementById(`Dish_image_${index}`);
+        const dishPriceElement = document.getElementById(`Dish_price_${index}`);
+
+        dishNameElement.textContent = item.DishName;
+        dishDescElement.textContent = item.DishDescription;
+        dishImageElement.src = imagesData[index].Dishimage;
+        dishPriceElement.textContent = `$${item.TotalPrice}`;
+      });
+    })
+    .catch(error => {
+      console.error("Error:", error);
+    });
+}
+
+// Call the function to populate the menu items
+populateMenuItems();
 
 
 // Call the initial display
@@ -136,3 +181,4 @@ fetch("fetch_data.php")
   .catch(error => {
     console.error("Error:", error);
   });
+

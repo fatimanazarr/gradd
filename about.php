@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
     <link rel="stylesheet" href="resp.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    
     <title>About Us</title>
 </head>
 <body>
@@ -25,9 +26,9 @@
         </ul>
       </div>
       <div class="menu-icon" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></div>
-      <div class="search3">
-        <input type="text" value="البحث">
-      </div>
+      <div class="shoppingBag3">
+    <i class="fa-solid fa-bag-shopping fa-2xl" style="color: #964325;"></i>
+    </div>
     </div>
     
 </section>

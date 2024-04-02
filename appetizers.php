@@ -26,8 +26,12 @@
     </div>
     <div class="menu-icon" onclick="toggleMenu()" style="color:  white;"><i class="fa-solid fa-bars"></i></div>
 
-    <div class="search2">
-      <input type="text" value="البحث">
+    <div class="shoppingBag2">
+    <i class="fa-solid fa-bag-shopping fa-2xl" style="color: white;" onclick="goToSecondPage()"></i>
+      <span class="item-count"></span>
+      <div class="cart-menu">
+      <div id="cart-dropdown" class="cart-dropdown"></div>
+      </div>
     </div>
   </div>
   

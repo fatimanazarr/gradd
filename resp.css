@@ -290,7 +290,7 @@
   
   .right-div3 h1 {
   font-size: 50px;
-  margin-right: -250px;
+  margin-right: -200px;
   }
   .right-div3 p {
   font-size: 16px;
@@ -320,11 +320,6 @@
   margin-top: 3vh;
   font-size: 10px;
   }
-  
-
-
-
-
 
 
   /****** Appetizers Page css responsitvity *****/
@@ -462,7 +457,130 @@
           margin-right: 9vh;
         }
           /************ END OF ABOUT US PAGE RESPONSITIVITY ***************/
+/************* SIGN UP PAGE RESPONSITVITY *************/
+.main-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+.image-container2 {
+  display: none;
+}
+
+.content-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.top-section {
+  margin-top: 4vh;
+  margin-left: 0vh;
+}
+
+.title2 {
+  font-size: 40px;
+  margin-top: -5vh;
+margin-right: 23vh;}
+
+.login-section {
+  margin-top: -15px;
+  margin-left: -10vh;
+}
+
+.subtitle {
+  font-size: 12px;
+  margin-right: 1vh;
+}
+
+.login-button {
+  width: 110px;
+  font-size: 13px;
+  border-radius: 4px;
+  margin-left: 0vh;
+  height: 25.91px;
+}
+.bottom-section{
+  margin-top: 15vh;
+}
+.form-group {
+  margin-bottom: 5px;
+  margin-right: -2vh;
+}
+
+.input-box {
+  width: 130px;
+  height: 30px;
+  border-radius: 4px;
+  margin-right: 10px;
+  padding: 5px;
+}
+.input-box2 {
+  width: 283px;
+  height: 30px;
+  border-radius: 4px;
+  margin-right: 10px;
+  padding: 5px;
+}
+
+.submit-button {
+  width: 290px;
+  margin-right: 0px;
+  border-radius: 4px;
+  height: 40px;
+  margin-top: 50px;
+}
+
+/***************SIGN IN PAGE RESPONSITVITY*************/
+.pizzaImg{
+  display: none;
+}
+#top-section2 h1 {
+  font-size: 40px;
+  margin-left: 3vh;
+  }
+  .sign-upbutton {
+    border-radius: 4px;
+    margin-left: 18vh;
+    width: 100px;
+    font-size: 11px;
+    }
+  .signupsection p {
+    display: none;
+    }
+    #bottom-section2 {
+      margin-left: 5vh;
+      margin-top: 0vh;
+    }
+    #bottom-section2 h1 {
+      color: black;
+      font-size: 40px;
+      margin-top: 60px;
+      margin-left: 6.5vh;
+    }
+    #bottom-section2 p {
+      font-size: 14px;
+      margin-left: 6vh;
+      margin-top: -25px;
+    }
+    #bottom-section2 input[type="text"],
+    #bottom-section2 input[type="password"] {
+      width: 283px;
+      height: 30px;
+      border-radius: 4px;
+      margin-right: 10px;
+      padding: 5px;
+      margin-bottom: 10px;
+    }
+    #bottom-section2 input[type="submit"] {
+      width: 283px;
+      margin-left: 1vh;
+      border-radius: 4px;
+      height: 40px;
+      margin-top: 50px;
+    }
+    
 }
 
 @media only screen and (min-width: 391px) and (max-width: 490px) {
@@ -917,10 +1035,132 @@ height: auto;
       margin-right: 11vh;
     }
       /************ END OF ABOUT US PAGE RESPONSITIVITY ***************/
-
+/************* SIGN UP PAGE RESPONSITVITY *************/
+.main-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-@media only screen and (max-width: 281px) {
+.image-container2 {
+  display: none;
+}
+
+.content-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.top-section {
+  margin-top: 4vh;
+  margin-left: 0vh;
+}
+
+.title2 {
+  font-size: 40px;
+  margin-top: -5vh;
+margin-right: 23vh;}
+
+.login-section {
+  margin-top: -15px;
+  margin-left: -10vh;
+}
+
+.subtitle {
+  font-size: 12px;
+  margin-right: 1vh;
+}
+
+.login-button {
+  width: 110px;
+  font-size: 13px;
+  border-radius: 4px;
+  margin-left: 0vh;
+  height: 25.91px;
+}
+
+.bottom-section{
+  margin-top: 15vh;
+}
+.form-group {
+  margin-bottom: 5px;
+  margin-right: -2vh;
+}
+
+.input-box {
+  width: 130px;
+  height: 30px;
+  border-radius: 4px;
+  margin-right: 10px;
+  padding: 5px;
+}
+.input-box2 {
+  width: 283px;
+  height: 30px;
+  border-radius: 4px;
+  margin-right: 10px;
+  padding: 5px;
+}
+
+.submit-button {
+  width: 290px;
+  margin-right: 0px;
+  border-radius: 4px;
+  height: 40px;
+  margin-top: 50px;
+}
+/***************SIGN IN PAGE RESPONSITVITY*************/
+.pizzaImg{
+  display: none;
+}
+#top-section2 h1 {
+  font-size: 50px;
+  margin-left: 3vh;
+  }
+  .sign-upbutton {
+    border-radius: 4px;
+    margin-left: 18vh;
+    width: 100px;
+    font-size: 12px;
+    }
+  .signupsection p {
+    display: none;
+    }
+    #bottom-section2 {
+      margin-left: 5vh;
+      margin-top: 5vh;
+    }
+    #bottom-section2 h1 {
+      font-size: 40px;
+      margin-top: 60px;
+      margin-left: 6vh;
+    }
+    #bottom-section2 p {
+      font-size: 15px;
+      margin-left: 5vh;
+      margin-top: -18px;
+    }
+    #bottom-section2 input[type="text"],
+    #bottom-section2 input[type="password"] {
+      width: 293px;
+      height: 30px;
+      border-radius: 4px;
+      margin-left: 1vh;
+      padding: 5px;
+      margin-bottom: 10px;
+    }
+    #bottom-section2 input[type="submit"] {
+      width: 293px;
+      margin-left: 1.5vh;
+      border-radius: 4px;
+      height: 40px;
+      margin-top: 50px;
+    }
+    
+}
+
+@media only screen and (max-width: 282px) {
   .logo h1 {
     font-size: 40px;
     margin-top: 6%;
@@ -1318,4 +1558,636 @@ height: auto;
 margin-top: -50px;
 }
 
+/************ ABOUT US PAGE RESPONSITIVITY ***************/
+  
+.navbar3 {
+  justify-content: flex-start;
+  }
+.logo3 h1 {
+  font-size: 40px;
+  margin-top: 6%;
+  margin-right: -9vh;
 }
+.menu3{
+  display: none;
+}
+.menu3 ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    
+ }
+.menu3 ul li {
+  
+  margin-left: 30px;
+  margin-bottom: 10px;
+  width: 100px;
+  font-size: 15px;
+  }
+  
+.search3 input {
+    display: none;
+}
+
+  .leftaboutUs-div img{
+  height: 200px;
+  margin-left: 9vh;
+  }
+  .abouUs-div
+  {
+  margin-right: -14%;
+  margin-top: 5vh;
+  }
+  
+  .abouUs-div h3{
+  font-size: 18px; 
+  margin-top: 2vh;
+  }
+  .abouUs-div h1{
+    font-size: 30px; 
+    margin-top: -1vh;
+    }
+    
+    .abouUs-div p{
+    width: 43vh; 
+     font-size: 15px; 
+     line-height: 20px;
+    }
+    .abouUs-div hr{
+    width: 40vh;
+    margin-right: 0vh;
+    }
+    .abouUs-div #AboutBlack{
+      width: 43vh; 
+      font-size: 15px; 
+      line-height: 20px;
+    }
+    .abouUs-div .explore-button3 {
+      width: 180px;
+      height: 36px;
+      margin-right: 7vh;
+    }
+      /************ END OF ABOUT US PAGE RESPONSITIVITY ***************/
+
+      
+/***************SIGN IN PAGE RESPONSITVITY*************/
+.pizzaImg{
+  display: none;
+}
+#top-section2 h1 {
+  font-size: 40px;
+  margin-left: 3vh;
+  }
+  .sign-upbutton {
+    border-radius: 4px;
+    margin-left: 16vh;
+    width: 100px;
+    font-size: 11px;
+    }
+  .signupsection p {
+    display: none;
+    }
+    #bottom-section2 {
+      margin-left: 2vh;
+      margin-top: 0vh;
+    }
+    #bottom-section2 h1 {
+      color: black;
+      font-size: 40px;
+      margin-top: 60px;
+      margin-left: 6.5vh;
+    }
+    #bottom-section2 p {
+      font-size: 14px;
+      margin-left: 6vh;
+      margin-top: -25px;
+    }
+    #bottom-section2 input[type="text"],
+    #bottom-section2 input[type="password"] {
+      width: 283px;
+      height: 30px;
+      border-radius: 4px;
+      margin-right: 10px;
+      padding: 5px;
+      margin-bottom: 10px;
+    }
+    #bottom-section2 input[type="submit"] {
+      width: 283px;
+      margin-left: 1vh;
+      border-radius: 4px;
+      height: 40px;
+      margin-top: 50px;
+    }
+    
+}
+
+@media only screen and (min-width: 539px) and (max-width: 1024px) {
+   
+  /*********** LANDING PAGE RESPONSITIVITY *************/
+.navbar {
+  justify-content: flex-start;
+  }
+
+  .logo h1 {
+    font-size: 50px;
+    margin-top: 6%;
+    margin-right: 1vh;
+  }
+  
+  .menu ul {
+    list-style: none;
+    display: flex;
+  
+  }
+  .menu ul li {
+    margin-right: 30px;
+    font-size: 20px;
+    width: 11vh;
+    
+  }
+  .search  {
+    display: none;
+  }
+  /* تصميم الدائرة البيجي اللي بالسكشن الاول*/
+  .image img{
+    width: auto;
+    height: 340px;
+    margin-right: -28px;
+  }
+  .content-section {
+      display: flex;
+      margin-top: -3vh;
+      margin-right: 35vh;
+      padding: 0  0 0 20px;
+
+    }
+      /* تصميم الدائرة مال الاطباق اللي بالسكشن الاول*/
+
+.left-div {
+  margin-top: 70px;
+  margin-right: 20px;
+}
+.left-div img {
+  width: auto; /* Adjust this value to set the desired width */
+  height: 350px; /* Adjust this value to maintain the aspect ratio */
+}
+      /* تصميم النصوص مال المطعم اللي بالسكشن الاول*/
+    
+    .right-div {
+      margin-right: -32vh;
+      margin-top: 4vh;
+      direction: rtl;
+    }
+    
+    .right-div h3 {
+      font-size: 14px;
+    }
+    
+    .right-div h2 {
+      font-size: 35px;
+      margin-top: -2vh;
+    }
+    
+    .right-div h2:nth-of-type(2) {
+      font-size: 50px;
+      margin-top: -4vh; 
+    }
+    .right-div p {
+      font-size: 14px;
+      margin-top: -2vh;
+      width: 300px;
+    }
+      /* تصميم البتن مال المنيو اللي بالسكشن الاول*/
+    
+    .explore-button {
+      width: 150px;
+      height: 36px;
+      font-size: 13px;
+      border-radius: 5px;
+    }
+
+    .right-div img {
+      margin-top: 70px; 
+      width: 65%; 
+    }
+    .explore-button:hover::before {
+      left: 100%;
+    }
+    
+
+  /******** LANDING PAGE SERVICES SECTION RESPONSITIVITY ************/
+ 
+
+  .divx {
+  position: relative;
+  width: 200px;
+  height: 250px;
+
+  }
+  .divx img {
+  height: 85px;
+  }
+  
+  .divx h1 {
+  font-size: 15px;
+  }
+  
+  .divx p {
+  color: #333333;
+  font-size: 12px;
+  font-family: Avenir;
+  }
+  
+  /******** END OF SERVICE RESPONSITIVITY ************/   
+  
+  
+/*****************LANDING PAGE Our Story Section RESPONSITIVITY ********************/
+.two-divs-section {
+
+  margin-top: 10vh;
+  }
+  .image-div2 img {
+      max-width: 50%;
+      margin-right: 0vh;
+      height: auto;
+      }
+  .content-div2 {
+  margin-right: -20vh;
+  }
+  
+  .content-div2 h2 {
+  font-size: 18px;
+  }
+  
+  .content-div2 h1 {
+  font-size: 25px;
+  width: 210px;
+  }
+  
+  .content-div2 p {
+  font-size: 15px;
+  width: 290px;
+  }
+  
+  .button2 {
+  width: 140px;
+  height: 38px;
+  margin-top: 6%;
+  margin-bottom: 6%;
+  font-size: 16px;
+  border: none;
+  box-shadow: none;
+  border-radius: 5px;
+  }
+  /*****************END OF Our Story Section RESPONSITIVITY ********************/
+
+  /************ LANDING PAGE MENU SECTION RESPONSITIVITY  ***********/
+
+    .menu-div {
+    margin-right: -40vh;
+    }
+    
+    .menu-div h2 {
+    font-size: 30px;
+    }
+    
+    .menu-div h1 {
+    font-size: 44px;
+    margin-top: -3vh;
+    }
+    
+    .items-div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    }
+
+/* LANDING PAGE  REVIEWS SECTION RESPONSITIVITY 
+ */
+.reviews-section {
+  margin-bottom: 8vh;
+  margin-top: 10vh;
+  } 
+  .div1 {
+  margin-right: 0vh;
+  } 
+ 
+  .image-container img {
+  width: 400px;
+  height: 400px;
+  }
+  .div2 {
+    margin-left: 0vh;
+   
+      
+      max-width: 300px;
+      margin-top: -0vh;
+  }
+  .div2 h1 {
+    font-size: 45px;
+    margin-top: -25px;
+    line-height: 50px;
+  }
+
+/***** LANDING PAGE FOOTER SECTION RESPONSITIVITY ******/
+  .footer-section{
+    height: 30vh;
+  }
+  .left-div3 {
+  margin-left: 50px;
+  margin-top: 5VH;
+  font-family: Avenir;
+  }
+
+  .footer-item h3 {
+  text-align: center;
+  margin-left: 8px;
+  }
+  .footer-item {
+  margin-right: 8VH;
+  }
+  .right-div3 {
+  text-align: right;
+  direction: rtl;
+  margin-right: 15VH;
+  }
+  .right-div3 h1 {
+  font-size: 60px;
+  margin-top: -20px;
+  margin-bottom: 0px;
+  font-weight: bold;
+  }
+  .right-div3 p {
+  font-size: 18px;
+  max-width: 350px;
+  }
+ 
+  .right-div3 .social-icons img {
+  width: 25px;
+  height: 25px;
+  }
+  .footer-caption {
+  top: 30vh;
+  }
+
+  /**************** LANDING PAGE DONE ************/ 
+
+  /************* ABOUT US PAGE RESPONSITIVITY ************/
+  .hero-section3 {
+    padding: 1%;
+    margin-top: -3%; /* Adjust this value to move the section up */
+    }
+    
+    .navbar3 {
+      justify-content: flex-start; 
+    }
+    
+    .logo3 h1 {
+      font-size: 50px;
+      margin-top: 6%;
+      margin-right: 1vh;
+    }
+    
+    .menu3 ul {
+      list-style: none;
+      display: flex;
+    
+    }
+    .menu3 ul li {
+      margin-right: 30px;
+      font-size: 20px;
+      width: 11vh;
+      
+    }
+    .search3  {
+      display: none;
+    }
+    
+    .new-section{
+    margin-bottom: 100px;
+    }
+    .leftaboutUs-div img{
+    height: 500px;
+    margin-left: 12vh;
+    }
+    .abouUs-div
+    {
+    margin-right: 80px;
+    margin-top: 2vh;
+    }
+    
+    .abouUs-div h3{
+    font-size: 20px; 
+    margin-top: 30px;
+    }
+    .abouUs-div h1{
+    font-size: 50px; 
+    }
+    
+    .abouUs-div p{
+     font-size: 18px; 
+     line-height: 26px;
+    }
+    .abouUs-div hr{
+    color: #D1966A; 
+    width: 600px;
+    margin-right: -3px;
+    }
+    .abouUs-div #AboutBlack{
+      font-size: 18px; 
+      line-height: 26px;
+    }
+    .abouUs-div .explore-button3 {
+      width: 256px;
+      height: 56px;
+      margin-top: 30px;
+      font-family: Avenir;
+      font-size: 15px;
+      font-weight: 400px;
+      background-color: #964325;
+      color: #F1EEE7;
+      border: none;
+      border-radius: 10px;
+      font-family: 'Avenir', sans-serif;
+      position: relative;
+      overflow: hidden;
+      transition: all 0.3s ease;
+    }
+    
+    
+    .abouUs-div .explore-button3:hover {
+      background-color: #411d10;
+    
+    }
+    /************* END OF ABOUT US PAGE RESPONSITIVITY *****/
+    
+  /********** SIGN UP RESPONSITIVITY **********/
+
+  .image-container2 img {
+    display: none;
+  }
+
+  .top-section {
+    margin-top: 22vh;
+    margin-right: 2vh;
+  }
+  
+  .title2 {
+    font-size: 60px;
+    margin-right: 40vh;
+    margin-top: -22vh;
+  }
+  
+  .login-section {
+    display: flex;
+    margin-top: -18vh;
+    margin-left: 0vh;
+  }
+  
+  .subtitle {
+    display: none;
+  }
+  
+  .login-button {
+    width: 200px;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-right: 20px;
+    height: 35.91px;
+    border: none;
+  }
+  
+  .bottom-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .form-title {
+    font-size: 90px;
+  }
+  
+  .form-description {
+    font-size: 25px;
+  }
+  .form-group {
+    margin-bottom: 5px;
+    margin-right: -2vh;
+  }
+  
+  .input-box {
+    width: 250px;
+    height: 35px;
+    border-radius: 4px;
+    margin-right: 10px;
+    padding: 5px;
+  }
+  .input-box2 {
+    width: 520px;
+    height: 30px;
+    border-radius: 4px;
+    margin-right: 10px;
+    margin-top: 10px;
+  }
+  
+  .submit-button {
+    width: 300px;
+    margin-right: 10vh;
+    border-radius: 4px;
+    height: 40px;
+    margin-top: 50px;
+  }
+ /************** END OF SIGN UP RESPONSITVITY **********/
+
+ /************* menu page  responsitvity **********/
+ .hero-section2 {
+  height: 25vh;
+  padding: 1%;
+  margin-top: -3%;
+}
+.navbar2 {
+  justify-content: flex-start; 
+}
+
+.logo2 h1 {
+  font-size: 50px;
+  margin-top: 6%;
+  margin-right: 1vh;
+}
+
+.menu2 ul {
+  list-style: none;
+  display: flex;
+
+}
+.menu2 ul li {
+  margin-right: 30px;
+  font-size: 20px;
+  width: 11vh;
+  
+}
+.search2  {
+  display: none;
+}
+.categories-list {
+  margin-top: 3vh;
+  margin-right: -5vh;
+}
+.categories-list a {
+  font-size: 25px;
+  }
+  /***************SIGN IN PAGE RESPONSITVITY*************/
+.pizzaImg{
+  display: none;
+}
+#top-section2 h1 {
+  font-size: 60px;
+  margin-right: 30vh;
+  margin-top: 2vh;
+  }
+  .sign-upbutton {
+    border-radius: 4px;
+    margin-left: 14vh;
+    width: 150px;
+    font-size: 15px;
+    }
+  .signupsection p {
+    display: none;
+    }
+    #bottom-section2 {
+      margin-left: 20vh;
+      margin-top: 10vh;
+    }
+    #bottom-section2 h1 {
+      font-size: 90px;
+      width: 500px;
+      margin-top: 60px;
+      margin-left: -6vh;
+    }
+    #bottom-section2 p {
+      font-size: 25px;
+      width: 600px;
+      margin-left: -2vh;
+      margin-top: -3vh;
+    }
+    #bottom-section2 input[type="text"],
+    #bottom-section2 input[type="password"] {
+      width: 400px;
+      height: 40px;
+      border-radius: 4px;
+      margin-left: -2.5vh;
+      padding: 5px;
+      margin-bottom: 10px;
+    }
+    #bottom-section2 input[type="submit"] {
+      width: 400px;
+      margin-left: -1.9vh;
+      border-radius: 4px;
+      font-size: 16px;
+      height: 40px;
+      margin-top: 50px;
+    }
+    
+  }
+ 
