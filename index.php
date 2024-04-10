@@ -23,7 +23,7 @@
         <li><a href="index.php" style="text-decoration: none; ">الرئيسية</a></li>
         <li><a href="appetizers.php" style="text-decoration: none; ">قائمة الطعام</a></li>
         <li><a href="about.php" style="text-decoration: none; ">من نحن</a></li>
-        <li>تواصل معنا</li>
+        <li><a href="about.php" style="text-decoration: none; ">حسابك</a></li>
       </ul>
     </div>
     <div class="menu-icon" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></div>
